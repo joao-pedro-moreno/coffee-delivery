@@ -12,7 +12,7 @@ import { InfoWithIcon } from '../../../../components/InfoWithIcon'
 import { useTheme } from 'styled-components'
 
 export function Intro() {
-  const theme = useTheme()
+  const { colors } = useTheme()
 
   return (
     <IntroContainer>
@@ -31,25 +31,25 @@ export function Intro() {
 
           <BenefitsContainer>
             <InfoWithIcon
-              iconBg={theme.colors['brand-yellow-dark']}
+              iconbg={colors['brand-yellow-dark']}
               icon={<ShoppingCart weight="fill" />}
               text="Compra simples e segura"
             />
 
             <InfoWithIcon
-              iconBg={theme.colors['base-text']}
+              iconbg={colors['base-text']}
               icon={<Package weight="fill" />}
               text="Embalagem mantém o café intacto"
             />
 
             <InfoWithIcon
-              iconBg={theme.colors['brand-yellow']}
+              iconbg={colors['brand-yellow']}
               icon={<Timer weight="fill" />}
               text="Entrega rápida e rastreada"
             />
 
             <InfoWithIcon
-              iconBg={theme.colors['brand-purple']}
+              iconbg={colors['brand-purple']}
               icon={<Coffee weight="fill" />}
               text="O café chega fresquinho até você"
             />
